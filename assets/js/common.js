@@ -67,7 +67,7 @@ const projects = [
     title: 'Ecommerce shop app Admin',
     description: 'You can manage your products, watch statistics and etc.',
     img: './assets/img/projects/ecommerce-admin-navy.vercel.app_75d297e0-df5c-47e4-a033-5c5bedba3205.png',
-    stack: ['Typescript', 'Next js', 'React', 'Stripe', 'Prisma'],
+    stack: ['Typescript', 'Next js', 'React', 'Stripe', 'Prisma', 'SQL'],
     type: 'web',
     link: 'https://ecommerce-admin-navy.vercel.app/75d297e0-df5c-47e4-a033-5c5bedba3205'
   },
@@ -75,7 +75,7 @@ const projects = [
     title: 'Ecommerce shop app Store',
     description: 'You can manage your products, watch statistics and etc.',
     img: './assets/img/projects/ecommerce-store-ten-theta.vercel.app_.png',
-    stack: ['Typescript', 'Next js', 'React', 'Stripe', 'Prisma'],
+    stack: ['Typescript', 'Next js', 'React', 'Stripe', 'Prisma', 'SQL'],
     type: 'web',
     link: 'https://ecommerce-store-ten-theta.vercel.app/'
   },
