@@ -49,6 +49,7 @@ const contactForm = document.getElementById('contact-form'),
     // check if the field has a value
     if (contactName.value === '' || contactEmail.value === '' || Message.value === '') {
       // add and remove color
+      contactMessage.style.display = "block"
       contactMessage.classList.remove('color-light')
       contactMessage.classList.add('color-dark')
 
@@ -63,6 +64,7 @@ const contactForm = document.getElementById('contact-form'),
         'rbFI_1ITj3IWrPgho'
       ).then(() => {
         // show message and add color
+        contactMessage.style.display = "block"
         contactMessage.classList.add('color-light')
         contactMessage.textContent = 'Message sent ✔️'
 

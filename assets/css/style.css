@@ -653,6 +653,7 @@ input {
   left: 0;
   font-family: var(--mono-font);
   color: #fff;
+  display: none;
 }
 
 .color-light {
