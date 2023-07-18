@@ -60,3 +60,54 @@ function setActiveStyle(color) {
     }
   })
 }
+
+/*=============== Js render =============== */
+const projects = [
+  {
+    title: 'Ecommerce shop app Admin',
+    description: 'You can manage your products, watch statistics and etc.',
+    img: '/assets/img/projects/ecommerce-admin-navy.vercel.app_75d297e0-df5c-47e4-a033-5c5bedba3205.png',
+    stack: ['Typescript', 'Next js', 'React', 'Stripe'],
+    type: 'web',
+    link: 'https://ecommerce-admin-navy.vercel.app/75d297e0-df5c-47e4-a033-5c5bedba3205'
+  },
+  {
+    title: 'Ecommerce shop app Store',
+    description: 'You can manage your products, watch statistics and etc.',
+    img: '/assets/img/projects/ecommerce-store-ten-theta.vercel.app_.png',
+    stack: ['Typescript', 'Next js', 'React', 'Stripe'],
+    type: 'web',
+    link: 'https://ecommerce-store-ten-theta.vercel.app/'
+  },
+]
+const projectContainer = document.querySelector('.projects__container')
+const htmlProjects = projects.map((project) => {
+  return `<div class="project__item grid mix ${project.type}">
+  <img src="${project.img}" alt="" class="project__img">
+  
+  <div class="project__data">
+    <h3 class="project__title text-lg">${project.title}</h3>
+    <p class="project__description">${project.description}</p>
+    <h4 class="project__stack text-xs">USED STACK:</h4>
+    <ul class="tags text-sm">
+      ${project.stack.map((item, index) => {
+        return `<li>${item}</li>`
+      }).join(' ')}
+    </ul>
+  
+    <a href="${project.link}" target="_blank" class="project__link text-sm">${project.link}</a>
+  </div>
+  </div>`
+}).join(' ')
+
+projectContainer.insertAdjacentHTML("afterbegin", htmlProjects)
+
+/*=============== Mixitup Filter =============== */
+let mixerProjects = mixitup('.projects__container', {
+  selectors: {
+    target: '.project__item'
+  },
+  animation: {
+    duration: 300
+  }
+});

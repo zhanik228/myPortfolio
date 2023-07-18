@@ -35,15 +35,6 @@ linkWork.forEach((a) => {
   a.addEventListener('click', activeWork)
 })
 
-/*=============== Mixitup Filter =============== */
-let mixerProjects = mixitup('.projects__container', {
-  selectors: {
-      target: '.project__item'
-  },
-  animation: {
-      duration: 300
-  }
-});
 
 /*=============== Contact Form =============== */
 const contactForm = document.getElementById('contact-form'),
