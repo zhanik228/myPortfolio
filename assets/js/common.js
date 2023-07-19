@@ -73,7 +73,7 @@ const projects = [
   },
   {
     title: 'Ecommerce shop app Store',
-    description: 'You can manage your products, watch statistics and etc.',
+    description: 'Shopping app.',
     img: './assets/img/projects/ecommerce-store-ten-theta.vercel.app_.png',
     stack: ['Typescript', 'Next js', 'React', 'Stripe', 'Prisma', 'SQL'],
     type: 'web',
